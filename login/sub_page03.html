@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>sub page02</title>
+        <style>
+            .content{
+                height: 700px;
+            }
+            div{
+                width: 200px;
+                height: 200px;
+                text-align: center;
+            }
+            div.static{
+                /* static : relative 속성의 기준 */
+                position: static;
+                background-color: yellow;
+            }
+            div.relative{
+                /* static을 기준으로 움직인다. */
+                position: relative;
+                border: solid blue;
+                top: 300px;
+                left: 200px;
+            }
+            div.absolute{
+                /* 부모 요소 기준 */
+                position: absolute;
+                border: solid red;
+                top: 50%;
+                left: 50%;
+            }
+            div.fixed{
+                /* 스크롤을 움직여도 고정 */
+                position: fixed;
+                border: solid green;
+                top: 10%;
+                left: 10%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="navi.html" height="40px" width="100%" frameborder="0" scrolling="no"></iframe>
+        
+        <div class="content">
+            <div class="static">position:static</div>
+            <div class="relative">position:relative</div>
+            <div class="absolute">position:absolute</div>
+            <div class="fixed">position:fixed</div>
+        </div>
+        
+        <iframe src="footer.html" width="100%" frameborder="0"></iframe>
+    </body>
+</html>

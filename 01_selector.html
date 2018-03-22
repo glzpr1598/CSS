@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--웹페이지 아이콘-->
+        <link rel="icon" href="icon.jpg">
+        <title>CSS start</title>
+        <!--CSS 작성-->
+        <style>
+            /* CSS의 주석 */
+            
+            /* 태그 선택자(p태그에 대한 설정) */
+            p{
+                background-color: bisque;
+            }
+            
+            /* 클래스 선택자(class가 myclass인 요소에 대한 설정) */
+            /* 클래스 선택자는 .으로 표시 */
+            .myclass{
+                color: blue;
+            }
+            
+            /* 아이디 선택자(id가 myid인 요소에 대한 설정) */
+            /* 아이디 선택자는 #으로 표시(id는 중복되면 X) */
+            #myid{
+                color: red;
+            }
+            
+            /* p와 div 모두 설정 */
+            p, div{
+                /* 폰트 굵기: 600 -> bold */
+                font-weight: 600;
+            }
+            
+            /* 조상 자손 선택자 */
+            /* div 아래에 있는 모든 p태그 선택 */
+            div p{
+                background-color: aqua;
+            }
+            
+            /* 부모 자식 선택자 */
+            /* div 바로 아래에 있는 p태그 선택 */
+            div>p{
+                color: blueviolet
+            }
+            
+            /* 특정 속성을 가진 태그 선택자 */
+            input[type="text"]{
+                background-color: beige;
+            }
+            
+            /* 띄어쓰기 단위로 구분된 단어를 포함하는 선택자 */
+            img[alt~="이미지01"]{
+                /*
+                border-width: 1px;
+                border-style: solid;
+                border-color: black;
+                위 문장을 아래와 같이 한번에 쓸 수 있다.
+                */
+                border: 1px solid black;
+            }
+            
+            /* 단어를 포함하는 선택자 */
+            img[alt*="미지02"]{
+                border: 1px solid red;
+            }
+            
+            /* 핸드오버(마우스를 올렸을 때) 선택자 */
+            a:hover{
+                background-color: cadetblue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p id="myid">id가 있는 문단</p>
+        <p class="myclass">class가 있는 문단1</p>
+        <p class="myclass">class가 있는 문단2</p>
+        <p>일반 문단</p>
+        <div>
+            <p>
+                div 아래에 있는 p
+            </p>
+        </div>
+        
+        <input type="text">
+        <input type="email">
+        <br>
+        
+        <img src="img/img01.jpg" alt="이미지01" height="100">
+        <img src="img/img02.jpg" alt="이미지02" height="100">
+        <img src="img/img03.jpg" alt="이미지03" height="100">
+        <img src="img/img04.jpg" alt="이미지04" height="100">
+        <br>
+        
+        <a href="#">테스트 링크</a>
+    </body>
+</html>

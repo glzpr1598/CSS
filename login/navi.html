@@ -1,0 +1,31 @@
+<style>
+    div{
+        background-color: yellowgreen;
+        height: 26px;
+    }
+    ul{
+        /* block 속성 안에 block 속성을 넣으면 안됨. -> inline 속성으로 변경 */
+/*        display: inline;*/
+        list-style-type: none;
+        min-width: 1500px;
+    }
+    li{
+        float: left;
+        width: 200px;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 120%;
+    }
+    li:hover{
+        background-color: green;
+    }
+</style>
+<div>
+    <ul>
+        <a href="sub_page01.html" target="_parent"><li>HTML</li></a>
+        <a href="sub_page02.html" target="_parent"><li>CSS</li></a>
+        <a href="#"><li>JavaScript</li></a>
+        <a href="#"><li>jQuery</li></a>
+    </ul>
+</div>

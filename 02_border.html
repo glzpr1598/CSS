@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="img/icon.jpg">
+        <title>CSS border</title>
+        <style>
+            .one{
+                /*
+                border-width: 1px;
+                border-style: solid;
+                border-color: black;
+                위 문장을 아래와 같이 한번에 쓸 수 있다.
+                순서는 상관 없다.
+                */
+                border: 1px solid black;
+            }
+            
+            .two{
+                border-width: thin; /* 얇게 */
+                border-style: dashed; /* 점선 */
+                border-color: brown;
+            }
+            
+            /* 상하좌우 별로 속성을 줄 수 있다. */
+            .three{
+                border-top: medium dashed blue;
+                border-bottom: medium double red;
+                border-left: medium dotted black;
+                border-right: medium solid black;
+            }
+            
+            /* 상하좌우 스타일 쉽게 지정 */
+            .four{
+                /*border-style: dashed solid;  상하/좌우*/
+                border-style: dashed solid double dotted; /* 위부터 시계방향 */
+                border-color: blue black red black;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="one">border 속성 테스트</p>
+        <p class="two">border 속성 테스트</p>
+        <p class="three">border 속성 테스트</p>
+        <p class="four">border 속성 테스트</p>
+    </body>
+</html>

@@ -82,7 +82,28 @@
 		visibility: hidden; 
 		
 		
-	
+		
+		/* 배경 */
+        background-color: red;
+        background-image: url("img.png");
+        background-repeat: no-repeat | repeat | repeat-x | repeat-y;
+        background-attachment: scroll | fixed;
+        background-position: left top | 10px 10px;
+        background-size: cover | contain | 100px 100px;
+        /* 한 번에 입력 가능 */
+        background: red url("img.png") 0px 0px;
+		
+		
+		
+		/* 위치(포지션)
+        static : (기본값)정적인 위치. left, top을 지정해도 움직이지 않음.
+        relative : 부모 요소를 기준으로 상대적으로 움직임.
+        absolute : static이 아닌 부모 요소 안에서 절대적으로 움직임.
+        fixed : 스크롤과 무관하게 움직임. */
+        position : 속성;
+		
+		
+		
 		/* 테두리 */
 		border-style: solid;
         border-width: thin | medium | thick | 1px;
@@ -100,30 +121,9 @@
 		
 		
 		
-		/* 배경 */
-        background-color: red;
-        background-image: url("img.png");
-        background-repeat: no-repeat | repeat | repeat-x | repeat-y;
-        background-attachment: scroll | fixed;
-        background-position: left top | 10px 10px;
-        background-size: cover | contain | 100px 100px;
-        /* 한 번에 입력 가능 */
-        background: red url("img.png") 0px 0px;
-		
-		
-		
 		/* 최소, 최대 크기 */
 		min-width: 500px;
 		max-width: 500px;
-
-
-		
-        /* 위치(포지션)
-        static : (기본값)정적인 위치. left, top을 지정해도 움직이지 않음.
-        relative : 부모 요소를 기준으로 상대적으로 움직임.
-        absolute : static이 아닌 부모 요소 안에서 절대적으로 움직임.
-        fixed : 스크롤과 무관하게 움직임. */
-        position : 속성;
 
         
 
